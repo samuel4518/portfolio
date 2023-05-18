@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網站</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <ion-icon name="menu" id="menu-icon"></ion-icon>
+        <nav class="navbar">
+            <a href="#home" class="active">首頁</a>
+            <a href="#about">簡介</a>
+            <a href="#services">程式技能</a>
+            <a href="#portfolio">作品集</a>                 
+        </nav>
+    </header>
+    
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>你好，我是</h3>
+            <h1>李信恩</h1>
+            <h3>是一位前端工程師</h3>            
+            <p>擁有積極並樂觀的性格，喜愛分析並研究事物的最佳解決途徑。</p>
+            <div class="social-media">                
+                <a href="https://www.cakeresume.com/me/samuel4518" target="_blank"><ion-icon name="document-text"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/samuel-lee-5b819511a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/samuel4518" target="_blank"><ion-icon name="logo-github"></ion-icon></a>                
+            </div>
+            <a href="Samuel_CV .pdf" download="測試CV.pdf" class="btn">下載CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/me-removebg.png" alt="">
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/me-removebg.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">簡介</h2>
+            <h3>學歷</h3>            
+            <ul>
+                <li>國立清華大學工業工程與工程管理學系碩士</li>
+                <li>國立成功大學工業與資訊管理學系學士</li>
+            </ul>
+            <h3>個人特質</h3>
+            <ul>
+                <li>邏輯清晰，具換位思考能力，簡化複雜概念。</li>
+                <li>良好的溝通能力，能夠與團隊成員進行順暢的溝通。</li>
+                <li>負責任，對工作有高度的自我要求，確保工作品質符合要求。</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- service -->
+    <section class="services" id="services">
+        <h2 class="heading">程式技能</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <ion-icon name="logo-html5"></ion-icon>
+                <h3>網頁設計</h3>
+                <p>熟悉 HTML、CSS、JavaScript(ES6)的語法且具備使用Bootstrap、jQuery的經驗</p>                
+            </div>
+
+            <div class="services-box">
+                <ion-icon name="logo-vue"></ion-icon>
+                <h3>Vue</h3>
+                <p>擁有使用Vuex、Vue Router進行實作的經驗</p>                
+            </div>
+
+            <div class="services-box">
+                <ion-icon name="logo-github"></ion-icon>
+                <h3>Git</h3>
+                <p>有使用Git做版本控制的經驗</p>                
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">作品集</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./images/portfolio.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>個人履歷網站</h4>
+                    <p></p>
+                    <a href="https://samuel4518.github.io/portfolio/"><ion-icon name="exit-outline"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./images/login.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>登入表單切版</h4>
+                    <p></p>
+                    <a href="https://samuel4518.github.io/loginForm/" target="_blank"><ion-icon name="exit-outline"></ion-icon></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <img src="./images/todolist.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>待辦清單(To-do list)</h4>
+                    <p></p>
+                    <a href="https://samuel4518.github.io/todo-list/dist/#/" target="_blank"><ion-icon name="exit-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- contact -->
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Concat <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Adress">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="phone number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="送出" class="btn">
+        </form>
+    </section> -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-text">            
+            <p>Copyright &copy; 2023 by Samuel Lee | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><ion-icon name="arrow-up-outline"></ion-icon></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+
+    <!-- js -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
