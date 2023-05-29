@@ -21,13 +21,13 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    width: 100%;
+    width: 100vw;
 }
 
 section {
@@ -39,7 +39,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
@@ -98,6 +98,10 @@ section {
     100% {
         transform: translateY(0);
     }
+}
+
+.home-content {
+    padding-left: 1rem;
 }
 
 .home-content h3 {
@@ -173,7 +177,9 @@ section {
     text-align: center;
     font-size: 4.5rem;
 }
-
+.about-content {
+    padding: 2rem .5rem 0 2rem;
+}
 .about-content ul li {
     font-size: 1.8rem;
     font-weight: 300;
@@ -422,7 +428,7 @@ section {
 
 @media (max-width: 768px) {
     #menu-icon {
-        display: block;
+        display: inline-block;
     }
 
     .navbar {
@@ -461,12 +467,15 @@ section {
 
     .home-img img,
     .about img {
-        width: 70vw;
+        width: 70%;
         margin-top: 4rem;
     }
 
     .about {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;        
+    }
+    .about-content {
+        padding: 0, 2rem;
     }
 
     .services h2,
